@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .h0 {
+        @apply text-3xl font-bold font-primary md:text-5xl;
+    }
+
+    h1,
+    .h1 {
+        @apply text-2xl font-primary md:text-4xl text-primary-500;
+    }
+
+    h2,
+    .h2 {
+        @apply text-xl font-primary md:text-3xl;
+    }
+
+    h3,
+    .h3 {
+        @apply text-lg font-primary md:text-2xl;
+    }
+
+    h4,
+    .h4 {
+        @apply text-base font-primary md:text-lg;
+    }
+
+    body,
+    .p {
+        @apply text-sm font-primary md:text-base;
+    }
+
+    button,
+    .button {
+        @apply p-2 text-black no-underline bg-gray-200 border border-gray-400 cursor-pointer dark:bg-carbon-800 dark:border-carbon-700 dark:text-offwhite  min-w-min;
+    }
+
+    button:disabled,
+    .button:disabled,
+    .button.disabled {
+        @apply opacity-60;
+    }
+
+    button:hover,
+    .button:hover {
+        @apply border-black bg-secondary-500 dark:border-offwhite text-carbon-800;
+    }
+
+    button.active,
+    .button.active {
+        @apply border-black bg-primary-500 dark:border-offwhite text-carbon-800;
+    }
+
+    button:hover.active,
+    .button:hover.active {
+        @apply border-black bg-secondary-500 dark:border-offwhite text-carbon-800;
+    }
+
+    b {
+        @apply text-secondary-500;
+    }
+}
+
+@layer utilities {
+    .mask-wave {
+  --mask:
+    radial-gradient(1.84rem at 50% calc(100% - 2.55rem),#000 99%,#0000 101%) calc(50% - 2rem) 0/4rem 100%,
+    radial-gradient(1.84rem at 50% calc(100% + 1.55rem),#0000 99%,#000 101%) 50% calc(100% - 1rem)/4rem 100% repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+    }
+}
