@@ -61,6 +61,14 @@
     b {
         @apply text-secondary-500;
     }
+
+    a {
+        @apply decoration-dotted decoration-tertiary-500 underline decoration-from-font;
+    }
+
+    article a {
+        @apply text-tertiary-500;
+    }
 }
 
 @layer utilities {
