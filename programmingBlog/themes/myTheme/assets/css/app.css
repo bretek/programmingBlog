@@ -9,12 +9,12 @@
 
     h1,
     .h1 {
-        @apply text-2xl font-primary md:text-4xl text-primary-500;
+        @apply text-2xl font-bold font-primary md:text-4xl text-primary-500;
     }
 
     h2,
     .h2 {
-        @apply text-xl font-primary md:text-3xl;
+        @apply text-xl font-bold font-primary md:text-3xl;
     }
 
     h3,
@@ -24,7 +24,7 @@
 
     h4,
     .h4 {
-        @apply text-base font-primary md:text-lg;
+        @apply text-base italic font-primary md:text-lg;
     }
 
     body,
