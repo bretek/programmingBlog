@@ -72,11 +72,4 @@
 }
 
 @layer utilities {
-    .mask-wave {
-  --mask:
-    radial-gradient(1.84rem at 50% calc(100% - 2.55rem),#000 99%,#0000 101%) calc(50% - 2rem) 0/4rem 100%,
-    radial-gradient(1.84rem at 50% calc(100% + 1.55rem),#0000 99%,#000 101%) 50% calc(100% - 1rem)/4rem 100% repeat-x;
-  -webkit-mask: var(--mask);
-          mask: var(--mask);
-    }
 }
