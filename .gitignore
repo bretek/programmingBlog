@@ -1,3 +1,4 @@
 .direnv
 node_modules
 programmingBlog/public
+programmingBlog/themes/myTheme/assets/css/main.css
