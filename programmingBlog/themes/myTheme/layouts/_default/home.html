@@ -3,9 +3,8 @@
 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 m-auto justify-stretch gap-4">
     {{ range site.RegularPages }}
     <div class="flex flex-col border-2 border-gray-400 bg-carbon-700">
-        {{ range .Resources.ByType "image" | first 1 }}
-        <img src="{{ .RelPermalink }}" class="h-64 flex-auto object-cover" />
-        {{ end }}
+        <img src="{{ (path.Join .RelPermalink .Params.cover.image) | absURL }}" alt="{{ .Params.cover.alt }}"
+            class="h-64 flex-auto object-cover" />
         <div class="p-2">
             <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
             {{ .Summary | truncate 220 }}
